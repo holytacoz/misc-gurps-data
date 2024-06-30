@@ -1,0 +1,1418 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "85f5681e-6867-443a-85c1-b8c4dfd40272",
+	"traits": [
+		{
+			"id": "381721a9-f641-4141-8540-44c51a04e655",
+			"type": "trait_container",
+			"children": [
+				{
+					"id": "f100a9ba-9ca5-4c08-b8a0-bffb24a5163d",
+					"type": "trait",
+					"name": "Acute Vision",
+					"reference": "B35",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"levels": 3,
+					"points_per_level": 2,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "vision",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 6
+					}
+				},
+				{
+					"id": "9e1e4363-e5d2-4c0e-bd4e-864348c7d098",
+					"type": "trait",
+					"name": "Attribute Modifiers",
+					"modifiers": [
+						{
+							"id": "beaac0bd-f575-48eb-b208-f6c321108531",
+							"type": "modifier",
+							"name": "Per +1",
+							"cost": 5,
+							"cost_type": "points"
+						},
+						{
+							"id": "bddc14f8-096a-45de-a5be-74907e374b0e",
+							"type": "modifier",
+							"name": "ST -1",
+							"cost": -10,
+							"cost_type": "points"
+						}
+					],
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "701d9b26-e425-4c38-813a-819807bfc700",
+					"type": "trait",
+					"name": "Flight",
+					"reference": "B56,P50,PSI14",
+					"notes": "Air Move is Basic Speed x 2 (drop all fractions)",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "6ad7ecc5-8832-4a9c-82b4-85254a94daf5",
+							"type": "modifier",
+							"name": "Newtonian Space Flight",
+							"reference": "B56",
+							"cost": 25,
+							"disabled": true
+						},
+						{
+							"id": "48fd82c3-d8f0-4be7-a69b-1d5c7897f608",
+							"type": "modifier",
+							"name": "Space Flight",
+							"reference": "B56",
+							"cost": 50,
+							"disabled": true
+						},
+						{
+							"id": "b53b501f-2ecc-4c99-8766-5766e670ce73",
+							"type": "modifier",
+							"name": "Cannot Hover",
+							"reference": "B56",
+							"cost": -15,
+							"disabled": true
+						},
+						{
+							"id": "6c2b8127-d1d7-4201-bfb4-8fdb13f344e6",
+							"type": "modifier",
+							"name": "Controlled Gliding",
+							"reference": "B56",
+							"cost": -45,
+							"disabled": true
+						},
+						{
+							"id": "0c826766-8e63-4205-aa62-db6598e2b4f0",
+							"type": "modifier",
+							"name": "Gliding",
+							"reference": "B56",
+							"cost": -50,
+							"disabled": true
+						},
+						{
+							"id": "19cb7f15-94dc-4622-b798-4eb2d8dd1668",
+							"type": "modifier",
+							"name": "Lighter Than Air",
+							"reference": "B56",
+							"cost": -10,
+							"disabled": true
+						},
+						{
+							"id": "b924f3a8-46a9-41ca-93ee-8c6980e1624f",
+							"type": "modifier",
+							"name": "Low Ceiling",
+							"reference": "B56",
+							"notes": "30'",
+							"cost": -10,
+							"disabled": true
+						},
+						{
+							"id": "3fdb4313-9cea-4ecd-915e-82a3d9208033",
+							"type": "modifier",
+							"name": "Low Ceiling",
+							"reference": "B56",
+							"notes": "10'",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "033099c0-2248-40a9-bc8a-d505297693e8",
+							"type": "modifier",
+							"name": "Low Ceiling",
+							"reference": "B56",
+							"notes": "5'",
+							"cost": -25,
+							"disabled": true
+						},
+						{
+							"id": "eedf31a5-c7ad-4967-9c43-ec1cc31f3680",
+							"type": "modifier",
+							"name": "Small Wings",
+							"reference": "B56",
+							"cost": -10,
+							"disabled": true
+						},
+						{
+							"id": "3c786352-fa26-4862-8b6a-6cfef78a995c",
+							"type": "modifier",
+							"name": "Space Flight Only",
+							"reference": "B56",
+							"cost": -75,
+							"disabled": true
+						},
+						{
+							"id": "ef21e56c-ec8d-4d9f-9643-c5ff26f41ad7",
+							"type": "modifier",
+							"name": "Winged",
+							"reference": "B56",
+							"cost": -25
+						},
+						{
+							"id": "6551975e-39ce-4013-bf89-1eda2fd4f32e",
+							"type": "modifier",
+							"name": "Planetary",
+							"reference": "P50",
+							"cost": -5,
+							"disabled": true
+						},
+						{
+							"id": "0151bb33-5645-42aa-afbe-414074cceffb",
+							"type": "modifier",
+							"name": "Requires Surface",
+							"reference": "P50",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "af1cb269-ac6e-4b29-9173-99380703cbf7",
+							"type": "modifier",
+							"name": "Slow",
+							"reference": "PSI14",
+							"notes": "Basic Speed",
+							"cost": -25,
+							"disabled": true
+						},
+						{
+							"id": "ecf503cc-493c-4d8a-a0d9-7aa0b79c2bd2",
+							"type": "modifier",
+							"name": "Slow, Move 1",
+							"reference": "PSI14",
+							"cost": -45,
+							"disabled": true
+						},
+						{
+							"id": "b53ded9b-d24e-4a5a-ab39-6cdaa574ae3f",
+							"type": "modifier",
+							"name": "Encumbrance-Limited (No encumbrance)",
+							"reference": "FFWF12",
+							"reference_highlight": "Encumbrance-Limited",
+							"notes": "Can only glide at best when overburdened",
+							"cost": -15,
+							"disabled": true
+						},
+						{
+							"id": "d0a74eb5-64d3-4650-978d-6bd539d38d82",
+							"type": "modifier",
+							"name": "Encumbrance-Limited (Light encumbrance)",
+							"reference": "FFWF12",
+							"reference_highlight": "Encumbrance-Limited",
+							"notes": "Can only glide at best when overburdened",
+							"cost": -10,
+							"disabled": true
+						},
+						{
+							"id": "c1f771ed-e5bd-46a6-b67c-e88578c364c6",
+							"type": "modifier",
+							"name": "Encumbrance-Limited (Medium encumbrance)",
+							"reference": "FFWF12",
+							"reference_highlight": "Encumbrance-Limited",
+							"notes": "Can only glide at best when overburdened",
+							"cost": -5
+						}
+					],
+					"base_points": 40,
+					"calc": {
+						"points": 28
+					}
+				},
+				{
+					"id": "d2241a44-6fdc-4ca1-84d6-a0068675653a",
+					"type": "trait",
+					"name": "Magery",
+					"reference": "B66",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Supernatural"
+					],
+					"modifiers": [
+						{
+							"id": "10b7c609-d742-473c-a229-fd39e10a948f",
+							"type": "modifier",
+							"name": "Dance",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "8cffcc39-a19c-4aa2-8a65-f270534b6ad7",
+							"type": "modifier",
+							"name": "Dark-Aspected",
+							"cost": -50,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "9a43b6eb-5fca-4b3b-9475-9c8922652001",
+							"type": "modifier",
+							"name": "Day-Aspected",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "1db3c1d2-12b8-4d9f-aaec-8a1f58f99922",
+							"type": "modifier",
+							"name": "Musical",
+							"cost": -50,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "7ef63d35-934c-4046-8b55-22208f7a99b6",
+							"type": "modifier",
+							"name": "Night-Aspected",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "0f92e868-30bd-4a88-8dd7-d1929eb47c0e",
+							"type": "modifier",
+							"name": "One College",
+							"notes": "@College@",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "7a67c4c3-2454-43a0-acd4-aac1265bd79a",
+							"type": "modifier",
+							"name": "Solitary",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "162576be-563f-43f2-9bd3-91db2defc569",
+							"type": "modifier",
+							"name": "Song",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						}
+					],
+					"base_points": 5,
+					"levels": 1,
+					"points_per_level": 10,
+					"features": [
+						{
+							"type": "spell_bonus",
+							"match": "all_colleges",
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "thaumatology"
+							},
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 15
+					}
+				},
+				{
+					"id": "9b495472-a662-439a-834e-504abb36efe5",
+					"type": "trait",
+					"name": "One Arm",
+					"reference": "B147",
+					"notes": "You cannot use two-handed weapons, wield two weapons at once (or a weapon and a shield), or perform any task that requires two arms",
+					"tags": [
+						"Disadvantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "776e002d-4d68-4c32-b229-338babb7ec78",
+							"type": "modifier",
+							"name": "Spell Mitigator",
+							"cost": 10,
+							"cost_type": "points",
+							"disabled": true
+						}
+					],
+					"base_points": -20,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "on tasks that are possible with one arm but that are usually executed with two",
+							"amount": -4
+						}
+					],
+					"calc": {
+						"points": -20
+					}
+				},
+				{
+					"id": "05ce54da-b3bc-4188-b6ea-e6b4c27031d7",
+					"type": "trait",
+					"name": "Sharp Beak",
+					"reference": "B91",
+					"tags": [
+						"Exotic",
+						"Perk",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "bd3971dd-9552-493f-9d82-bd79bace3494",
+							"type": "modifier",
+							"name": "Provided by Vampiric Bite",
+							"reference": "B96",
+							"cost": -1,
+							"cost_type": "points",
+							"disabled": true
+						}
+					],
+					"base_points": 1,
+					"weapons": [
+						{
+							"id": "28e498e7-d203-4912-9c1e-fbe4d0fb71de",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "pi+",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Peck",
+							"reach": "C",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								}
+							],
+							"calc": {
+								"damage": "thr-1 pi+"
+							}
+						}
+					],
+					"calc": {
+						"points": 1
+					}
+				},
+				{
+					"id": "1504e2b9-65a7-483a-834f-3b54645e378c",
+					"type": "trait",
+					"name": "Feathers (Fur)",
+					"reference": "B101",
+					"tags": [
+						"Exotic",
+						"Perk",
+						"Physical"
+					],
+					"base_points": 1,
+					"calc": {
+						"points": 1
+					}
+				}
+			],
+			"open": true,
+			"name": "Aarakocra",
+			"ancestry": "Human",
+			"container_type": "ancestry",
+			"calc": {
+				"points": 26
+			}
+		},
+		{
+			"id": "2a5c7e0f-78b6-4a24-886a-80d4826ed94f",
+			"type": "trait_container",
+			"children": [
+				{
+					"id": "ddc91b49-6791-431a-bf6a-2e9c31e48a36",
+					"type": "trait",
+					"name": "Absolute Direction",
+					"reference": "B34",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "940c9da3-6966-4ea6-9974-517614d0606b",
+							"type": "modifier",
+							"name": "Requires signal",
+							"reference": "B34",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "12730389-6652-4df8-8b34-ad078b76e408",
+							"type": "modifier",
+							"name": "3D Spatial Sense",
+							"reference": "B34",
+							"cost": 5,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "starts_with",
+										"qualifier": "piloting"
+									},
+									"amount": 1
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "aerobatics"
+									},
+									"amount": 2
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "free fall"
+									},
+									"amount": 2
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "navigation"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "hyperspace"
+									},
+									"amount": 2
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "navigation"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "space"
+									},
+									"amount": 2
+								}
+							]
+						}
+					],
+					"base_points": 5,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "body sense"
+							},
+							"amount": 3
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "navigation"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "air"
+							},
+							"amount": 3
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "navigation"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "land"
+							},
+							"amount": 3
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "navigation"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "sea"
+							},
+							"amount": 3
+						}
+					],
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "f291d1d2-01cd-41ad-87d1-b6d3f294be65",
+					"type": "trait",
+					"name": "Attentive",
+					"reference": "B163",
+					"tags": [
+						"Mental",
+						"Quirk"
+					],
+					"base_points": -1,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to skill rolls when working on lengthy tasks, but -3 to notice any important interruption",
+							"amount": 1
+						}
+					],
+					"calc": {
+						"points": -1
+					}
+				},
+				{
+					"id": "83b07fb6-f5ea-43ac-87fa-44e2a3c3149e",
+					"type": "trait",
+					"name": "Callous",
+					"reference": "B125",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"base_points": -5,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "psychology"
+							},
+							"amount": -3
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "teaching"
+							},
+							"amount": -3
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "from past victims and anyone with Empathy",
+							"amount": -1
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "to Interrogation and Intimidation rolls when you use threats or torture",
+							"amount": 1
+						}
+					],
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "a4de3538-c4dc-4b42-94f9-1b0173f90855",
+					"type": "trait",
+					"name": "Careful",
+					"reference": "B163",
+					"tags": [
+						"Mental",
+						"Quirk"
+					],
+					"base_points": -1,
+					"calc": {
+						"points": -1
+					}
+				},
+				{
+					"id": "b06192cb-20fe-45fa-9d89-08eb1cf1c777",
+					"type": "trait",
+					"name": "Language Talent",
+					"reference": "B65",
+					"tags": [
+						"Advantage",
+						"Mental"
+					],
+					"base_points": 10,
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "1bfa961f-16b4-404a-8f53-07aee12942c7",
+					"type": "trait",
+					"name": "Mimicry",
+					"reference": "B68,P60",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Mental"
+					],
+					"modifiers": [
+						{
+							"id": "2f8335bc-0a4e-4501-bdd5-e86ccf6e7911",
+							"type": "modifier",
+							"name": "Voice Library",
+							"reference": "P61",
+							"cost": 50,
+							"disabled": true
+						}
+					],
+					"base_points": 10,
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "6884c3f6-06b0-4a94-9a4c-abd7ddca5f56",
+					"type": "trait",
+					"name": "Nictitating Membrane",
+					"reference": "B71",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"levels": 1,
+					"points_per_level": 1,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to all HT rolls concerned with eye damage",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 1
+					}
+				},
+				{
+					"id": "bdc05078-8add-4f92-9f97-9c5946a785ef",
+					"type": "trait",
+					"name": "Night Vision",
+					"reference": "B71,P87",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"levels": 1,
+					"points_per_level": 1,
+					"can_level": true,
+					"calc": {
+						"points": 1
+					}
+				},
+				{
+					"id": "625f23e4-a112-43f0-a3fb-5c97d80b4ddf",
+					"type": "trait",
+					"name": "Nocturnal",
+					"reference": "B146",
+					"tags": [
+						"Disadvantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "17779d0e-b107-4e43-b6b9-9d799eba06d8",
+							"type": "modifier",
+							"name": "Permanent Paralysis",
+							"reference": "B146",
+							"cost": 100,
+							"disabled": true
+						}
+					],
+					"base_points": -20,
+					"calc": {
+						"points": -20
+					}
+				},
+				{
+					"id": "7d8b6e4c-e1e5-4383-bd1a-9f8c45b81c1b",
+					"type": "trait",
+					"name": "Peripheral Vision",
+					"reference": "B74,P87",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "dbd1dea0-de15-436d-b93e-de0f3e92eb85",
+							"type": "modifier",
+							"name": "Easy to Hit",
+							"reference": "B75",
+							"notes": "Others can target your eyes at only -6 to hit",
+							"cost": -20,
+							"disabled": true
+						}
+					],
+					"base_points": 15,
+					"calc": {
+						"points": 15
+					}
+				},
+				{
+					"id": "e0dedbb0-c444-4ec1-952c-47ccdd4d9de9",
+					"type": "trait",
+					"name": "Proud",
+					"reference": "B164",
+					"tags": [
+						"Mental",
+						"Quirk"
+					],
+					"base_points": -1,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "to orders, insults, or social slights",
+							"amount": -1
+						}
+					],
+					"calc": {
+						"points": -1
+					}
+				},
+				{
+					"id": "1e41be20-ad96-42d3-97cc-5f412674665a",
+					"type": "trait",
+					"name": "Talons",
+					"reference": "B43",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"base_points": 8,
+					"weapons": [
+						{
+							"id": "4ef3e921-504d-4564-b793-dd4cdf4fcb51",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cut",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Slash",
+							"reach": "C",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								},
+								{
+									"type": "skill",
+									"name": "Boxing"
+								},
+								{
+									"type": "skill",
+									"name": "Karate"
+								}
+							],
+							"calc": {
+								"damage": "thr-1 cut"
+							}
+						},
+						{
+							"id": "f7ecdc36-9959-4bb3-bb66-0176dc15c9c6",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "imp",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Stab",
+							"reach": "C",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								},
+								{
+									"type": "skill",
+									"name": "Boxing"
+								},
+								{
+									"type": "skill",
+									"name": "Karate"
+								}
+							],
+							"calc": {
+								"damage": "thr-1 imp"
+							}
+						}
+					],
+					"calc": {
+						"points": 8
+					}
+				}
+			],
+			"name": "Optional Traits",
+			"notes": "Aarakocra have numerous morphologies. Generally, smaller subspecies have colorful sexual dimorphisms, and larger sub-species are more androgynous. When selecting Other Possible Traits, first determine what kind of \"bird base\" your character represents, and select traits that reflect the comparison.",
+			"container_type": "alternative_abilities",
+			"calc": {
+				"points": 19
+			}
+		}
+	],
+	"skills": [
+		{
+			"id": "e3aee3ae-1393-4b2c-99fc-050a6e840703",
+			"type": "skill",
+			"name": "Flight",
+			"reference": "B195",
+			"tags": [
+				"Athletic"
+			],
+			"difficulty": "ht/a",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "ht",
+					"modifier": -5
+				}
+			],
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "starts_with",
+							"qualifier": "flight"
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "00fc1b53-8072-41b3-8c79-b0740ae56bf4",
+			"type": "skill",
+			"name": "Observation",
+			"reference": "B211",
+			"tags": [
+				"Criminal",
+				"Military",
+				"Police",
+				"Spy",
+				"Street"
+			],
+			"difficulty": "per/a",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "per",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Shadowing",
+					"modifier": -5
+				}
+			]
+		},
+		{
+			"id": "0b57a329-cfb0-4d58-a117-ea867b797bac",
+			"type": "skill",
+			"name": "Mental Strength",
+			"reference": "B209",
+			"tags": [
+				"Esoteric"
+			],
+			"difficulty": "will/e",
+			"points": 1,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": false,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "starts_with",
+							"qualifier": "weapon master"
+						}
+					},
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "trained by a master"
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "a89061fd-ce8a-4697-9da2-d4b598de7dc4",
+			"type": "skill",
+			"name": "Thaumatology",
+			"reference": "B225",
+			"tags": [
+				"Magical",
+				"Occult"
+			],
+			"difficulty": "iq/vh",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -7
+				}
+			]
+		},
+		{
+			"id": "485dac87-c957-4899-bf39-df6de31002b3",
+			"type": "skill_container",
+			"children": [
+				{
+					"id": "c28c9e85-5460-4b45-aae2-e0ba3651ea4c",
+					"type": "skill",
+					"name": "Navigation",
+					"reference": "B211",
+					"tags": [
+						"Exploration",
+						"Outdoor",
+						"Technical",
+						"Vehicle"
+					],
+					"specialization": "Air",
+					"tech_level": "",
+					"difficulty": "iq/a",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Astronomy",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Navigation",
+							"specialization": "Land",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Navigation",
+							"specialization": "Sea",
+							"modifier": -2
+						}
+					]
+				},
+				{
+					"id": "e158e632-c8e0-4f1f-a906-8e4888f9e252",
+					"type": "skill",
+					"name": "Research",
+					"reference": "Lite16",
+					"tags": [
+						"Scholarly",
+						"Spy"
+					],
+					"tech_level": "",
+					"difficulty": "iq/a",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -5
+						}
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "prereq_list",
+								"all": true,
+								"when_tl": {
+									"compare": "at_least",
+									"qualifier": 8
+								},
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Computer Operation"
+										}
+									}
+								]
+							},
+							{
+								"type": "prereq_list",
+								"all": false,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "starts_with",
+											"qualifier": "Language"
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "Written (Native"
+										}
+									},
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "starts_with",
+											"qualifier": "Language"
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "Written (Accented)"
+										}
+									},
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "starts_with",
+											"qualifier": "Language"
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "Written (Broken)"
+										}
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"id": "8231bb17-44cd-49ed-8a58-7c010f2dace2",
+					"type": "skill",
+					"name": "Diplomacy",
+					"reference": "Lite15",
+					"tags": [
+						"Business",
+						"Police",
+						"Social"
+					],
+					"difficulty": "iq/h",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -6
+						},
+						{
+							"type": "skill",
+							"name": "Politics",
+							"modifier": -6
+						}
+					]
+				}
+			],
+			"open": true,
+			"name": "Other Possible Skills"
+		}
+	],
+	"spells": [
+		{
+			"id": "bb74e669-5604-42e5-a5f3-7d94e1e56511",
+			"type": "spell",
+			"name": "Apportation",
+			"reference": "M142",
+			"tags": [
+				"Movement"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Movement"
+			],
+			"power_source": "Arcane",
+			"spell_class": "Regular",
+			"resist": "Will",
+			"casting_cost": "Varies",
+			"casting_time": "1 sec",
+			"duration": "1 min",
+			"points": 1,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								},
+								"notes": {
+									"compare": "does_not_contain",
+									"qualifier": "one college"
+								}
+							},
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "one college (movement)"
+								}
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "db008c3f-1939-47cb-ae06-a79221e5f75f",
+			"type": "spell",
+			"name": "Locksmith",
+			"reference": "M143",
+			"tags": [
+				"Movement"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Movement"
+			],
+			"power_source": "Arcane",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"maintenance_cost": "2",
+			"casting_time": "1 sec",
+			"duration": "1 min",
+			"points": 1,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "apportation"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "7a8dd1fb-95c1-4a04-8780-fcb835266d7d",
+			"type": "spell",
+			"name": "Manipulate",
+			"reference": "M145",
+			"tags": [
+				"Movement"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Movement"
+			],
+			"power_source": "Arcane",
+			"spell_class": "Regular",
+			"casting_cost": "4",
+			"maintenance_cost": "3",
+			"casting_time": "3 sec",
+			"duration": "1 min",
+			"points": 1,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "locksmith"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "03ae1dd3-2850-4742-9cbc-e1c179a3c5df",
+			"type": "spell",
+			"name": "Detect Magic",
+			"reference": "M101",
+			"tags": [
+				"Knowledge"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Knowledge"
+			],
+			"power_source": "Arcane",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"maintenance_cost": "-",
+			"casting_time": "5 sec",
+			"duration": "Instant",
+			"points": 1,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": false,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
+						},
+						"notes": {
+							"compare": "does_not_contain",
+							"qualifier": "one college"
+						}
+					},
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
+						},
+						"notes": {
+							"compare": "contains",
+							"qualifier": "one college (knowledge)"
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "3c29ac75-dd7c-46e8-aa19-2fa507d4c634",
+			"type": "spell",
+			"name": "Sense Mana",
+			"reference": "M101",
+			"tags": [
+				"Knowledge"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Knowledge"
+			],
+			"power_source": "Arcane",
+			"spell_class": "Info",
+			"casting_cost": "3",
+			"maintenance_cost": "-",
+			"casting_time": "5 sec",
+			"duration": "Instant",
+			"points": 1,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "detect magic"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			}
+		}
+	],
+	"notes": [
+		{
+			"id": "b0cc91e5-e4e1-4cc5-95ab-bd43a3d0c6d5",
+			"type": "note",
+			"text": "Aarakocra are a bird-like sapient race which have four limbs, two wings and two legs, a beaked head, and a head for flight stabilization. There are numerous sub-species of aarakocra, see \"Other Possible Traits\" for more information when building your character.\n\nAll Aarakocra are natural magic users (Magery 1) with an innate sense of the magical world, seeing all events as part of \"The Grand Tapestry\". \n\nWhile aarakrocras don't have hands, they are adept at using their feet for fine motor skills in combination with their innate magical abilities (Apportation, Locksmith, Manipulate), and/or beak \u0026 tongue to perform more detailed tasks. \n\nAarakocra typically live in canopies, or natural caves in large flocks, or with their immediate family. They often construct elaborate nests from wood, clay, or mud, avoiding heavier materials that might easily destabilize their home branches, or detach from cave walls.\n\nWhile they prefer flight, most sub-species of aarakocra are capable at walking with their two legs, most are profient runners who actually prefer terrestrial mobility. When walking, they keep their wings folded in front of them to avoid looking like a \"bird\"; this often gives them the appearance of wearing a feathered cloak.\n\nTo reduce drag, most aarakocra do not wear clothing, but jewelry is quite popular about the face, neck, feet, and toes. \n\nIn combat, aarakocra typically rely on their speed in flight to strike at their foes before they can react, cast powerful spells from a safe distance (usually from above). Both techniques often restrict their armor selections, so many warriors wear light leather armor about their chest, while those strong enough wear light metal about their head, legs, and feet. Melee fighters often wear metal talons on their feet and beaks, and metal spikes and blades on their wing wrists which are attached by leather thongs wrapping around their wing, attaching to chest straps. \n\nBecause aarakocra are naturally skilled mages, the lightweight nature of their armor can be reinforced through magical enchantments. This is often reserved for great warriors from noble houses.\n\nBecause aarakocra are not natural laborers, they are dependant on other races to mine minerals, harvest lumber, and transport goods. This has forced many aarakocra societies to have one or two keen diplomats, or ruthless overlords."
+		}
+	]
+}
